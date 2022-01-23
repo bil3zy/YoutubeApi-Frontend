@@ -3,23 +3,15 @@ import "./VideoItem.css";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
-    <div onClick={() => onVideoSelect(video)}>
-      <div className="container">
-        <img
-          src={video.snippet.thumbnails.medium.url}
-          alt={video.snippet.title}
-          style={{ width: 200, marginLeft: 20, cursor: "pointer" }}
-        />
-        <div
-          style={{
-            alignContent: "center",
-            paddingLeft: 20,
-            width: 200,
-            overflow: "hidden",
-          }}
-        >
-          {video.snippet.title}
-        </div>
+    <div className="video-item-container " onClick={() => onVideoSelect(video)}>
+      <img
+        src={video.snippet.thumbnails.medium.url}
+        alt={video.snippet.title}
+        className="img"
+      />
+      <div className="card-title">
+        <p>{video.snippet.title}</p>
+        <hr />
       </div>
     </div>
   );

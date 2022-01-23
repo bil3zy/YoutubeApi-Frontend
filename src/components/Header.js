@@ -6,7 +6,7 @@ import logo from "../images/play-video-logo.png";
 const Header = ({ onTermSubmit }) => {
   return (
     <div className="headers">
-      <img className="img" src={logo} alt="Logo" height={40} width={40} />
+      <img className="logo" src={logo} alt="Logo" height={40} width={40} />
       <SearchBar onTermSubmit={onTermSubmit} />
     </div>
   );

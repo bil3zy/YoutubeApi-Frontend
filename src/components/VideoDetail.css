@@ -1,0 +1,14 @@
+.video {
+  float: "left";
+  min-height: 500px;
+  width: 65vw;
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+    width: 90vw;
+  }
+  .video-container {
+    align-self: center;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./VideoDetail.css";
 
 const VideoDetail = ({ video }) => {
   const [videoWidth, setVideoWidth] = useState(900);
@@ -19,16 +20,8 @@ const VideoDetail = ({ video }) => {
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div>
-      <iframe
-        style={{
-          float: "left",
-          minHeight: 500,
-          width: "65vw",
-        }}
-        src={videoSrc}
-        title={video.id.videoId}
-      />
+    <div className="video-container">
+      <iframe className="video" src={videoSrc} title={video.id.videoId} />
     </div>
   );
 };
