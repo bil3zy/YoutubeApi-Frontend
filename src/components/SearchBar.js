@@ -28,7 +28,7 @@ const SearchBar = ({ onTermSubmit }) => {
         <input
           style={{
             height: 30,
-            width: 350,
+            width: "250px",
             borderRadius: 5,
             marginRight: 5,
           }}

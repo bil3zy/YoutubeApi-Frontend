@@ -1,14 +1,15 @@
 .video {
-  float: "left";
-  min-height: 500px;
-  width: 65vw;
+  width: 95vw;
+  min-height: 350px;
+}
+.video-container {
+  align-self: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 750px) {
   .video {
-    width: 90vw;
-  }
-  .video-container {
-    align-self: center;
+    float: "left";
+    min-height: 500px;
+    width: 65vw;
   }
 }

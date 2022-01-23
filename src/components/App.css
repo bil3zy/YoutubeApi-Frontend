@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 95w;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .body {
     display: flex;
     flex-direction: row;
